@@ -54,11 +54,11 @@ public class SecurityConfig {
                 sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         //http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/utilisateurs/**").permitAll());
+        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/clients/**").permitAll());
         http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/comptes/**").permitAll());
-        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/retraits/**").permitAll());
-        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/versements/**").permitAll());
-        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/virements/**").permitAll());
+        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/debit/**").permitAll());
+        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/credit/**").permitAll());
+        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests.requestMatchers("/transfer/**").permitAll());
         //http.authorizeRequests().anyRequest().authenticated();//Si j'enlève cette ligne, je pourrai avoir accès à tout sans authentification
         http.addFilterBefore(new JwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
         http.addFilter(new JwtAuthentificationFilter(authenticationManager(), loginSuccessHandler, utilisateurActiveBean()));
