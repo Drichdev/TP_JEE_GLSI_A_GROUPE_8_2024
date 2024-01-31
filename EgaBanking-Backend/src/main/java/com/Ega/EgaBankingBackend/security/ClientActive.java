@@ -5,7 +5,8 @@ import com.Ega.EgaBankingBackend.dto.ClientDTO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClientActive {
+public class
+ClientActive {
     public List<ClientDTO> logins;
 
     public ClientActive() {

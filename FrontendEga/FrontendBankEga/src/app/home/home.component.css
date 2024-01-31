@@ -1,0 +1,193 @@
+*{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f4f3;
+}
+
+header{
+    width: 100%;
+}
+
+header .header-top{
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header .header-top .header-left{
+    font-size: 40px;
+    position: fixed;
+}
+
+
+header .header-top .header-right{
+    display: flex;
+    margin-left: 70%;
+}
+
+header .header-bottom{
+    margin: 40px 0 0 90px;
+}
+
+.link-client{
+    margin-left: 20px;
+}
+.txt-wel{
+    width: 500px;
+    font-weight: 500;
+}
+
+main{
+    margin: 90px 0;
+    height: 400px;
+    display: flex;
+}
+
+
+
+.left, .right{
+    width: 50%;
+    
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+
+}
+
+.link{
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #6a6ae6;
+    margin-left: 40px;
+}
+
+.link a{
+    color: white;
+}
+
+.left img{
+    background-size: cover;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+
+
+}
+p{
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.img-car{
+    margin-bottom: 60px;
+}
+
+.img-left img{
+    width: 600px;
+    margin-left: 20px;
+    }
+
+.img-left img {
+    transition: transform 0.8s ease;
+    cursor: pointer;
+    }
+      
+.img-left img:hover {
+    transform: scale(1.04);
+    }
+
+.img-right img{
+    margin-top: 60px;
+    width: 600px;
+    margin-left: 700px;
+}
+
+.img-right img {
+    transition: transform 0.8s ease;
+    cursor: pointer;
+    }
+      
+.img-right img:hover {
+    transform: scale(1.04);
+    }
+
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.foot{
+    width: 800px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.trans{
+    left: 5px;
+    transition: left .4s;
+}

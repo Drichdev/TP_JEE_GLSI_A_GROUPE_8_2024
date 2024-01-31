@@ -30,6 +30,8 @@ public class EgaBankingBackendApplication {
 				ClientDTO client= new ClientDTO();
 				client.setNom(nom);
 				client.setEmail(nom+"@gmail.com");
+				client.setUsername("user");
+				client.setPassword("1234");
 				compteService.saveClient(client);
 			});
 			compteService.listClients().forEach(customer->{

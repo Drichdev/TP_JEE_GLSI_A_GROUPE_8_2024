@@ -10,6 +10,16 @@ public class ClientDTO {
     private String nom;
     private String email;
     private String prenom;
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     private Date dateDeNaissance;
     private String sexe;
     private String adresse;
