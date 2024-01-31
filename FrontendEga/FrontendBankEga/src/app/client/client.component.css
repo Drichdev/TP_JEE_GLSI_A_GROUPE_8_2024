@@ -1,0 +1,60 @@
+*{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f4f3;
+    padding: 10px;
+}
+main{
+    height: 250px;
+}
+
+.head h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header-bottom{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.cas{
+    display: flex;
+    width: 28%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link-com{
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #6a6ae6;
+    margin: 80px;
+}
+
+.link-com a{
+    color: white;
+}
+
+.choix{
+    margin: 20px 0;
+}
